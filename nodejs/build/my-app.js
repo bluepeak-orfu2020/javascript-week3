@@ -1,7 +1,37 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ([
-/* 0 */,
+/* 0 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+
+
+console.log('Before require');
+
+const math = __webpack_require__(2);
+const devJokes = __webpack_require__(3);
+
+console.log('After require');
+
+console.log('Square is: ' + math.square(3));
+console.log('Var1: ' + math.var1);
+
+console.log('Joke: ' + devJokes.getRandomJoke());
+
+
+/***/ }),
 /* 1 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+/* 2 */
 /***/ ((__unused_webpack_module, exports) => {
 
 console.log('Start math.js');
@@ -15,10 +45,10 @@ exports.var1 = 123;
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-var arr = __webpack_require__(3);
+var arr = __webpack_require__(4);
 
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -31,7 +61,7 @@ exports.getRandomJoke = function () {
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ ((module) => {
 
 "use strict";
@@ -64,20 +94,21 @@ module.exports = JSON.parse("[{\"joke\":\"A programmer puts two glasses on his b
 /******/ 	}
 /******/ 	
 /************************************************************************/
-(() => {
-console.log('Before require');
-
-const math = __webpack_require__(1);
-const devJokes = __webpack_require__(2);
-
-console.log('After require');
-
-console.log('Square is: ' + math.square(3));
-console.log('Var1: ' + math.var1);
-
-console.log('Joke: ' + devJokes.getRandomJoke());
-
-})();
-
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	// startup
+/******/ 	// Load entry module
+/******/ 	__webpack_require__(0);
+/******/ 	// This entry module used 'exports' so it can't be inlined
 /******/ })()
 ;

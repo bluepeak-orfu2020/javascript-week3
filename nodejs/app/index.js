@@ -1,3 +1,5 @@
+import './styles.css';
+
 console.log('Before require');
 
 const math = require('./math.js');
