@@ -1,0 +1,9 @@
+.header {
+    color: green;
+}
+
+.text {
+    background-image: url(./background.jpg);
+    color: white;
+    padding: 10px;
+}
